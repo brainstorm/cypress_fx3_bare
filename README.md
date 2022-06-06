@@ -23,7 +23,8 @@ The PC-side software works in Windows (TCC) or Linux (GCC). Test in both as of D
 Here are some experiments and ongoing progress as of June 2022:
 
 1. [libsigrok-cypress-fx3-test](https://github.com/schnommus/libsigrok-cypress-fx3-test)
-1. [libsigrok pullrequest](https://github.com/sigrokproject/libsigrok/pull/148)
+1. [libsigrok PR #148](https://github.com/sigrokproject/libsigrok/pull/148)
+1. [libsigrok PR #154](https://github.com/sigrokproject/libsigrok/pull/154)
 
 # Brief installation notes.
 
