@@ -5,7 +5,7 @@
 	Tested on Linux, working full functionality 12/31/2017
 */
 
-#include <libcyprio.h>
+#include "libcyprio.h"
 #include <stdio.h>
 #include <string.h>
 

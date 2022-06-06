@@ -17,7 +17,7 @@
 #include <unistd.h>
 #endif
 
-#include <libcyprio.h>
+#include "../libcyprio/libcyprio.h"
 
 
 int main( int argc, char ** argv )

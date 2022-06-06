@@ -2,7 +2,7 @@ all : latencytest
 
 LCYPRIO:=../libcyprio
 CFLAGS:=-I$(LCYPRIO) -O1 -g
-LDFLAGS:=-lusb-1.0 -lpthread
+LDFLAGS:=`pkg-config --libs libusb` -lpthread
 
 CYPRIO:=$(LCYPRIO)/libcyprio.c $(LCYPRIO)/libcyprio_util.c
 

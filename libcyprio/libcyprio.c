@@ -8,7 +8,7 @@
 
 
 #include <string.h>
-#include <libcyprio.h>
+#include "../libcyprio/libcyprio.h"
 #include <stdio.h>
 #include <stdlib.h>
 

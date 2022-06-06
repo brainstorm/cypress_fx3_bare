@@ -2,7 +2,8 @@ all : cyprflash
 
 LCYPRIO:=../libcyprio
 CFLAGS:=-I$(LCYPRIO) -Os
-LDFLAGS:=-lusb-1.0
+CFLAGS:=`pkg-config --cflags libusb`
+LDFLAGS:=`pkg-config --libs libusb`
 
 CYPRIO:=$(LCYPRIO)/libcyprio.c $(LCYPRIO)/libcyprio_util.c
 

@@ -8,7 +8,7 @@
 #define CYPRIO_H
 
 #include <stdint.h>
-#include "cyprio_aux.h"
+#include "../libcyprio/cyprio_aux.h"
 #include "cyprio_usb100.h"
 
 //Portions of this code are based on CyAPI's internal codebase. (Specifically in enumeration)

@@ -1,2 +1,5 @@
 isotest/CyAPI.cpp
 isotest/data.dat
+*.o
+*.map
+*.exe

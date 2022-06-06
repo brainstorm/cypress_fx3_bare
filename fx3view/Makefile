@@ -4,6 +4,7 @@ CYPERIO:=../libcyprio
 CYPERIO_C:=$(CYPERIO)/libcyprio.c $(CYPERIO)/libcyprio_util.c
 
 CFLAGS := -I$(CYPERIO) -Irawdraw -Os
+CFLAGS := `pkg-config --cflags libusb`
 LDFLAGS:= -lm -lX11 -lXext -lusb-1.0 -lpthread
 
 rawdraw/CNFGFunctions.c :

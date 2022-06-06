@@ -14,13 +14,13 @@
 ## installation root directory path.
 ##
 
-FX3FWROOT=../../../cyfx3sdk
+FX3FWROOT=../../../sdk/cyfx3sdk
 
 all:compile
 
 include $(FX3FWROOT)/fw_build/fx3_fw/fx3_build_config.mak
 
-$(shell echo -e "#define GIT_COMMIT \"$$(git describe --always --dirty --match 'NOT A TAG')\"" > version.h)
+$(shell echo "#define GIT_COMMIT \"$$(git describe --always --dirty --match 'NOT A TAG')\"" > version.h)
 
 MODULE = cyfxisosrc
 
