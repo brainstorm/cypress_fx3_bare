@@ -43,12 +43,16 @@
 #include "cyu3usb.h"
 #include "cyu3uart.h"
 #include "cyu3i2c.h"
-#include <cyu3gpif.h>#include <cyu3pib.h>#include <pib_regs.h>
+#include <cyu3gpif.h>
+#include <cyu3pib.h>
+#include <pib_regs.h>
 #include <cyu3gpio.h>
 #include "cyu3pib.h"
 #include "version.h"
 
 #include "fast_gpif2.cydsn/cyfxgpif2config.h"
+#include "../../../sdk/cyfx3sdk/firmware/u3p_firmware/inc/cyu3gpif.h"
+
 //#include "fast_gpif2.h"
 //#include "cyfxgpif2config.h"
 

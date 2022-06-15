@@ -14,6 +14,7 @@
 ## installation root directory path.
 ##
 
+#CFLAGS+=-I../../../sdk/cyfx3sdk/firmware/u3p_firmware/inc
 FX3FWROOT=../../../sdk/cyfx3sdk
 
 all:compile
@@ -26,7 +27,8 @@ MODULE = cyfxisosrc
 
 SOURCE= $(MODULE).c 	\
 	cyfxisodscr.c	\
-	cyfxtx.c
+	cyfxtx.c  \
+	complex_gpif_load.c
 
 ifeq ($(CYFXBUILD),arm)
 SOURCE_ASM=cyfx_startup.S

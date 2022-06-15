@@ -1,4 +1,5 @@
-#include <cyu3gpif.h> //XXX CNL
+//#include <../../../sdk/cyfx3sdk/firmware/u3p_firmware/inc/cyu3gpif.h>
+#include <cyu3gpif.h>
 
 #define CyFxGpifConfig		CyFxGpifConfig_Complex
 #define CyFxGpifRegValue 	CyFxGpifRegValue_Complex
