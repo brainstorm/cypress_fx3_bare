@@ -14,7 +14,6 @@
 ## installation root directory path.
 ##
 
-#CFLAGS+=-I../../../sdk/cyfx3sdk/firmware/u3p_firmware/inc
 FX3FWROOT=../../../sdk/cyfx3sdk
 
 all:compile
@@ -59,13 +58,13 @@ $(C_OBJECT) : %.o : %.c
 $(A_OBJECT) : %.o : %.S
 	$(ASSEMBLE)
 
+elf2img:
+	$(FX3_INSTALL_PATH)/util/elf2img/elf2img -i cyfxisosrc.elf -o USBIsoSource.img -v
+
 clean:
 	rm -f ./$(MODULE).$(EXEEXT)
 	rm -f ./$(MODULE).map
 	rm -f ./*.o
 	rm -f cyfxtx.c cyfx_startup.S cyfx_gcc_startup.S
 
-
-compile: $(C_OBJECT) $(A_OBJECT) $(EXES)
-
-#[]#
+compile: $(C_OBJECT) $(A_OBJECT) $(EXES) elf2img

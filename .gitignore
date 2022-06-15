@@ -3,3 +3,5 @@ isotest/data.dat
 *.o
 *.map
 *.exe
+*.elf
+*.img

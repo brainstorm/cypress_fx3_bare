@@ -748,8 +748,9 @@ int CyprIOGetDevDescriptorInformation( struct CyprIO * ths )
 	PUSB_STRING_DESCRIPTOR IDs = (PUSB_STRING_DESCRIPTOR)buf;
 
 	ths->StrLangID =(LangIDs) ? IDs[0].bString[0] : 0;
+	int i;
 
-	for (int i=0; i<LangIDs; i++) {
+	for (i=0; i<LangIDs; i++) {
 		uint16_t id = IDs[i].bString[0];
 		if (id == 0x0409) ths->StrLangID = id;
 	}
@@ -781,7 +782,7 @@ int CyprIOGetDevDescriptorInformation( struct CyprIO * ths )
 	//Also bool bRetVal = IoControl(IOCTL_ADAPT_GET_USBDI_VERSION, (PUCHAR) &USBDIVersion, sizeof(ULONG));
 
 	int configs = ths->USBDeviceDescriptor.bNumConfigurations;
-	int i;
+
 	if( configs > MAX_CONFIG_DESCRIPTORS )
 	{
 		fprintf( stderr, "Warning: Too many config desriptors found (%d > %d)\n", configs, MAX_CONFIG_DESCRIPTORS );

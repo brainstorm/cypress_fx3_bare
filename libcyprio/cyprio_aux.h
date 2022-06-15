@@ -269,7 +269,7 @@
 	#define NUMBER_OF_ADAPT_IOCTLS 21 // Last IOCTL_ADAPT_INDEX + 1
 
 #else
-	#include <libusb.h>
+	//#include <usb.h>
 #endif
 
 
