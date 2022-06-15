@@ -51,10 +51,10 @@
 
 #define USB_ENDPOINT_TYPE_MASK                    0x03
 
-#define USB_ENDPOINT_TYPE_CONTROL                 0x00
-#define USB_ENDPOINT_TYPE_ISOCHRONOUS             0x01
-#define USB_ENDPOINT_TYPE_BULK                    0x02
-#define USB_ENDPOINT_TYPE_INTERRUPT               0x03
+// #define USB_ENDPOINT_TYPE_CONTROL                 0x00
+// #define USB_ENDPOINT_TYPE_ISOCHRONOUS             0x01
+// #define USB_ENDPOINT_TYPE_BULK                    0x02
+// #define USB_ENDPOINT_TYPE_INTERRUPT               0x03
 
 
 //

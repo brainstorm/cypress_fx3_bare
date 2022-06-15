@@ -2,7 +2,9 @@ all : isotest recstream
 
 LCYPRIO:=../libcyprio
 CFLAGS:=-I$(LCYPRIO) -O1 -g
-LDFLAGS:=-lusb-1.0 -lpthread
+LDFLAGS:=-lusb -lpthread
+LDFLAGS+=-L/opt/homebrew/Cellar/libusb-compat/0.1.5_1/lib -lusb
+CFLAGS+=-I/opt/homebrew/Cellar/libusb-compat/0.1.5_1/include
 
 CYPRIO:=$(LCYPRIO)/libcyprio.c $(LCYPRIO)/libcyprio_util.c
 
